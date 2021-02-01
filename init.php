@@ -29,13 +29,12 @@ if ( ! defined( 'WPINC' ) ) {
 
 // register Custom style and Scripts on initialization
 add_action( 'init', function () {
-	wp_register_script( 'blank-custom', plugins_url( '/js/custom-script.js', __FILE__ ), array(), '1.0.0', true );
-	wp_register_style( 'blank-custom', plugins_url( '/css/custom-style.css', __FILE__ ), false, '1.0.0', 'all' );
+	wp_register_script( 'custom-script', plugins_url( '/js/script.js', __FILE__ ), array(), '1.0.0', true );
+	wp_register_style( 'custom-style', plugins_url( '/css/style.css', __FILE__ ), false, '1.0.0', 'all' );
 } );
 
-
-// use the registered jquery and style above
+// use the registered script and style above
 add_action( 'wp_enqueue_scripts', function () {
-	wp_enqueue_script( 'blank-custom' );
-	wp_enqueue_style( 'blank-custom' );
-} );
+	wp_enqueue_script( 'custom-script' );
+	wp_enqueue_style( 'custom-style' );
+}, 999 );
