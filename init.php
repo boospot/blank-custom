@@ -9,7 +9,7 @@
  *
  *
  * @wordpress-plugin
- * Plugin Name:       Custom Code
+ * Plugin Name:       <site> Custom
  * Plugin URI:        https://boospot.com/
  * Description:       This is a short description of what the plugin does. It's displayed in the WordPress admin area.
  * Requires PHP:      7.0
@@ -25,7 +25,6 @@
 if ( ! defined( 'WPINC' ) ) {
 	die;
 }
-
 
 // register Custom style and Scripts on initialization
 add_action( 'init', function () {
