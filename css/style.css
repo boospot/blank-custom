@@ -7,3 +7,7 @@
   src: local(''), url('../fonts/roboto-v20-latin-regular.woff2') format('woff2'),
     url('../fonts/roboto-v20-latin-regular.woff') format('woff');
 }
+
+.test-class {
+  font-weight: 700;
+}
