@@ -8,6 +8,6 @@
     url('../fonts/roboto-v20-latin-regular.woff') format('woff');
 }
 
-.test-class {
-  font-weight: 700;
+.second-test-class {
+  font-weight: 300;
 }
