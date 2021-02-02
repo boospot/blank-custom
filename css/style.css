@@ -1,16 +1,12 @@
-/* roboto-regular - latin */
-@font-face {
-  font-family: 'Roboto';
+/* poppins-500 - latin */
+/* @font-face {
+  font-family: 'Poppins';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   font-display: swap;
-  src: local(''), url('../fonts/roboto-v20-latin-regular.woff2') format('woff2'),
-    url('../fonts/roboto-v20-latin-regular.woff') format('woff');
-}
-
-.second-test-class {
-  font-weight: 300;
-}
-.change-in-branch {
-  font-size: 20px;
-}
+  src: local(''),
+    url('/wp-content/plugins/wpsitecare360-custom/font/poppins-v15-latin-500.woff2')
+      format('woff2'),
+    url('/wp-content/plugins/wpsitecare360-custom/font/poppins-v15-latin-500.woff')
+      format('woff');
+} */
