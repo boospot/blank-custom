@@ -26,7 +26,7 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
-include( 'bloat-remover-functions.php' );
+include_once( 'bloat-remover-functions.php' );
 
 
 // register Custom style and Scripts on initialization
