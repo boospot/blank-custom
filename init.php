@@ -11,11 +11,11 @@
  * @wordpress-plugin
  * Plugin Name:       <site> Custom
  * Plugin URI:        https://boospot.com/
- * Description:       This is a short description of what the plugin does. It's displayed in the WordPress admin area.
+ * Description:       Custom Plugin to custom code and functionality by the developer
  * Requires PHP:      7.0
  * Requires at least: 5.0
- * Version:           1.0.0
- * Author:            Rao
+ * Version:           1.0.1
+ * Author:            booSpot
  * Author URI:        https://booskills.com/rao
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
