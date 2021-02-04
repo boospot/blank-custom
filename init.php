@@ -11,7 +11,7 @@
  * @wordpress-plugin
  * Plugin Name:       <site> Custom
  * Plugin URI:        https://boospot.com/
- * Description:       Custom Plugin to custom code and functionality by the developer
+ * Description:       Custom Plugin to add custom code and functionality by the developer.
  * Requires PHP:      7.0
  * Requires at least: 5.0
  * Version:           1.0.1
