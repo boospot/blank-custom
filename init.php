@@ -26,8 +26,8 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
-include_once( 'bloat-remover-functions.php' );
-include_once( 'GTM.php' );
+include_once( 'bloat-remover.php' );
+// include_once( 'GTM.php' );
 
 
 // register Custom style and Scripts on initialization
