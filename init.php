@@ -28,6 +28,7 @@ if ( ! defined( 'WPINC' ) ) {
 
 include_once( 'bloat-remover.php' );
 // include_once( 'GTM.php' );
+include_once( 'oxygen-functions.php' );
 
 
 // register Custom style and Scripts on initialization
