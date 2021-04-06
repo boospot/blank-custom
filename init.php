@@ -44,3 +44,16 @@ add_action( 'wp_enqueue_scripts', function () {
 }, 999 );
 
 
+// override universal css by oxygen
+// include css after universal css by oxygen builder
+// uncomment add_action to enqueue and comment out custom-style in above function 
+function wpdd_enqueue_css_after_oxygens() {
+	if ( ! class_exists( 'CT_Component' ) ) {
+		return;
+	}
+	$styles = new WP_Styles;
+	$styles->add( 'custom', plugin_dir_url( __FILE__ ) . 'css/style.css' );
+	$styles->enqueue( array ( 'custom' ) );
+	$styles->do_items();
+}
+// add_action( 'wp_head', 'wpdd_enqueue_css_after_oxygens', 1000000 );
