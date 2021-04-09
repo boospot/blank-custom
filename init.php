@@ -52,8 +52,9 @@ function wpdd_enqueue_css_after_oxygens() {
 		return;
 	}
 	$styles = new WP_Styles;
-	$styles->add( 'custom', plugin_dir_url( __FILE__ ) . 'css/style.css' );
-	$styles->enqueue( array ( 'custom' ) );
+	$styles->add( 'custom-after-oxygen', plugin_dir_url( __FILE__ ) . '/css/style.css' );
+	$styles->enqueue( array ( 'custom-after-oxygen' ) );
 	$styles->do_items();
 }
+// 1000000 priority so it is executed after all Oxygen's styles
 // add_action( 'wp_head', 'wpdd_enqueue_css_after_oxygens', 1000000 );
