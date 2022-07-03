@@ -33,8 +33,8 @@ include_once( 'oxygen-functions.php' );
 
 // register Custom style and Scripts on initialization
 add_action( 'init', function () {
-	wp_register_script( 'custom-script', plugins_url( '/js/script.js', __FILE__ ), array(), '1.0.0', true );
-	wp_register_style( 'custom-style', plugins_url( '/css/style.css', __FILE__ ), false, '1.0.0', 'all' );
+	wp_register_script( 'custom-script', plugins_url( '/js/script.js', __FILE__ ), array(), filemtime( plugin_dir_path( __FILE__ ) . '/js/script.js' ), true );
+	wp_register_style( 'custom-style', plugins_url( '/css/style.css', __FILE__ ), false, filemtime( plugin_dir_path( __FILE__ ) . '/css/style.css' ), 'all' );
 } );
 
 // use the registered script and style above
