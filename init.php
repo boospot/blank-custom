@@ -26,9 +26,9 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
-include_once( 'bloat-remover.php' );
+// include_once( 'bloat-remover.php' );
 // include_once( 'GTM.php' );
-include_once( 'oxygen-functions.php' );
+// include_once( 'oxygen-functions.php' );
 
 
 // register Custom style and Scripts on initialization
@@ -44,17 +44,14 @@ add_action( 'wp_enqueue_scripts', function () {
 }, 999 );
 
 
-// override universal css by oxygen
-// include css after universal css by oxygen builder
-// uncomment add_action to enqueue and comment out custom-style in above function 
+// override universal css by oxygen, 1000000 priority to include after oxygen css files
 function wpdd_enqueue_css_after_oxygens() {
 	if ( ! class_exists( 'CT_Component' ) ) {
 		return;
 	}
 	$styles = new WP_Styles;
-	$styles->add( 'custom-after-oxygen', plugin_dir_url( __FILE__ ) . '/css/style.css' );
+$styles->add( 'custom-after-oxygen', plugin_dir_url( __FILE__ ) . 'css/style.css', false, filemtime( plugin_dir_path( __FILE__ ) . '/css/style.css' ), 'all' );
 	$styles->enqueue( array ( 'custom-after-oxygen' ) );
 	$styles->do_items();
 }
-// 1000000 priority so it is executed after all Oxygen's styles
 // add_action( 'wp_head', 'wpdd_enqueue_css_after_oxygens', 1000000 );
