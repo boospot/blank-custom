@@ -25,6 +25,8 @@ add_action( 'wp_head', function () {
 	<?php
 }
 );
+
+
 add_action( 'ct_before_builder', function () {
 	if ( current_user_can( 'administrator' ) || current_user_can( 'shop_manager' ) ) {
 		return null;

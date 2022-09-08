@@ -16,7 +16,6 @@ add_action( 'wp_enqueue_scripts', function () {
 	endif;
 }, 999 );
 
-
 /**
  * Remove Bloat everywhere EXCEPT
  */
@@ -33,7 +32,6 @@ add_action( 'wp_enqueue_scripts', function () {
 
 	endif;
 }, 999 );
-
 
 /**
  * Remove Bloat Specific Post Type
